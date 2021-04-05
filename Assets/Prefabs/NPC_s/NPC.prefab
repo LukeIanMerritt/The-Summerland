@@ -2107,8 +2107,6 @@ GameObject:
   - component: {fileID: 6703468350650930725}
   - component: {fileID: 6703468350650930721}
   - component: {fileID: 7307144783773471236}
-  - component: {fileID: 3200477311703539187}
-  - component: {fileID: 611609941635598352}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Entity
@@ -2229,32 +2227,12 @@ MonoBehaviour:
   hungerBar: {fileID: 2457936765600480889}
   thirstBar: {fileID: 445713125244820622}
   energyBar: {fileID: 8741698954129473341}
+  workPlace: {fileID: 0}
+  clientWorkplace: {fileID: 0}
+  workItem: {fileID: 0}
+  jobRoles: 0
   decayRate: 2
---- !u!114 &3200477311703539187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703468350650930724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0584050d5268db6439226b827328238a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  npcRole: 0
---- !u!114 &611609941635598352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703468350650930724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be11f587c5bd03548826c38f03653c70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  stateMachine: {fileID: 0}
 --- !u!1 &6850419427016620042
 GameObject:
   m_ObjectHideFlags: 0

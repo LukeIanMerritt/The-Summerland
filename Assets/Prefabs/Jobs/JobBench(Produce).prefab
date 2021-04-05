@@ -1323,6 +1323,10 @@ MonoBehaviour:
   cartObject: {fileID: 4369180497572764489, guid: 2bca5df7d6a17d845959b6172f386f35, type: 3}
   assignedCharacters: []
   amountStored: 0
+  collectionScript: {fileID: 0}
+  statsScript: {fileID: 0}
+  clientLocation: {fileID: 0}
+  passedInfo: 0
 --- !u!65 &7947932024505986696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1334,7 +1338,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 5, z: 10}
+  m_Size: {x: 3, y: 5, z: 3}
   m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &7947932024533221379
 GameObject:

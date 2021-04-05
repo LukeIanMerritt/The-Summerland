@@ -63,9 +63,9 @@
     <Compile Include="Assets\Scripts &amp; Macros\JobControl_Script.cs" />
     <Compile Include="Assets\Scripts &amp; Macros\CartStateBase_Script.cs" />
     <Compile Include="Assets\Scripts &amp; Macros\AssignCollection_Script.cs" />
+    <Compile Include="Assets\Scripts &amp; Macros\State Machine\States\WorkState_Script.cs" />
     <Compile Include="Assets\Scripts &amp; Macros\State Machine\StateMachine_Script.cs" />
     <Compile Include="Assets\Scripts &amp; Macros\CartController_Script.cs" />
-    <Compile Include="Assets\Scripts &amp; Macros\State Machine\States\WorkState_Script.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

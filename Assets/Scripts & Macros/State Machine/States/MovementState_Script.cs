@@ -12,6 +12,7 @@ public class MovementState_Script : State_Script
     public override void Enter()
     {
         base.Enter();
+        Debug.Log("Movement State");
     }
 
     public override void Exit()

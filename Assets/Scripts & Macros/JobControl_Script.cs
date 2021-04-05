@@ -35,7 +35,6 @@ public class JobControl_Script : MonoBehaviour
         if (gameObject.name == "JobBench(Collection)")
         {
             enableCart = true;
-            //CartService();
         }
         else if (gameObject.name == "JobBench(Produce)")
         {
@@ -54,7 +53,6 @@ public class JobControl_Script : MonoBehaviour
 
         if (passedInfo)
         {
-            Debug.Log("Working");
             CartService();
         }
     }
@@ -71,12 +69,10 @@ public class JobControl_Script : MonoBehaviour
             statsScript = assignedCharacters[i].GetComponent<StatsController_Script>();           
             statsScript.AssignWorkplace(gameObject.transform);
             statsScript.AssignCollectionPoint(collectionScript.collectionPoint.transform);
+            statsScript.AssignWorkItem(cart);
             clientLocation = collectionScript.collectionPoint;
         }
-    }
-
-        //clientLocation = collectionScript.collectionPoint;
-    
+    }    
 
     public void OffloadProduce()
     {
@@ -90,7 +86,6 @@ public class JobControl_Script : MonoBehaviour
         {
             if (produceSlider.value < 100)
             {
-                //produceSlider.value += 0.01f;
                 produceSlider.value += 1f;
             }
             else

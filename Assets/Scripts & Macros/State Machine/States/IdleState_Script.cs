@@ -12,6 +12,9 @@ public class IdleState_Script : State_Script
     public override void Enter()
     {
         base.Enter();
+        Debug.Log("Idle State");
+        stateMachine.ChangeState(npcInfo.wandering);
+
     }
 
     public override void Exit()
@@ -22,10 +25,12 @@ public class IdleState_Script : State_Script
     public override void HandleInput()
     {
         base.HandleInput();
+        Debug.Log("Handing Input");
     }
 
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
+        Debug.Log("Idle State");
     }
 }

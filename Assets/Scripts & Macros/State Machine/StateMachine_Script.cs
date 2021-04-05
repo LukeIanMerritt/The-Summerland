@@ -2,21 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateMachine_Script : MonoBehaviour
+public class StateMachine_Script
 {
-    public State_Script currentState { get; private set; }
+    public State_Script CurrentState { get; private set; }
     
     public void Initialize(State_Script startingState)
     {
-        currentState = startingState;
+        CurrentState = startingState;
         startingState.Enter();
     }
 
     public void ChangeState(State_Script newState)
     {
-        currentState.Exit();
+        CurrentState.Exit();
 
-        currentState = newState;
+        CurrentState = newState;
         newState.Enter();
     }
 }
